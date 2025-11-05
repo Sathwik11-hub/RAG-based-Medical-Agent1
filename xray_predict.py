@@ -5,6 +5,7 @@ def main():
     image_path = input("Enter the path to your X-ray image: ").strip()
     if not os.path.exists(image_path):
         print("❌ File does not exist. Please check the path and try again.")
+        print("✅ Exiting the program.")
         return
     try:
         result = analyze_xray(image_path)
